@@ -43,6 +43,7 @@ function criaVeiculo(): Veiculo{
     veiculo.modelo = teclado('Modelo: ');
     veiculo.potencia = +teclado('Potência: ');
     veiculo.numeroMarchas = +teclado('Número de marchas: ');
+    console.log("Veículo cadastrado com sucesso!");
     return veiculo;
 }
 
