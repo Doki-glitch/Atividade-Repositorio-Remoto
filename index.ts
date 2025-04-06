@@ -58,8 +58,9 @@ function frear(veiculo: Veiculo): void {
       }
       console.log(`Velocidade atual após frear: ${veiculo.velocidade}`);
     } else {
-      console.log("O veículo já está parado!");
+      console.log("O veículo já está parado");
     }
   }
+
   
 
