@@ -3,6 +3,8 @@ import prompt from "prompt-sync";
 
 const teclado = prompt();
 
+console.log("Iniciar Teste");
+
 console.log("Olá! Bem-vindo(a) ao simulador de veículos!");
 console.log("Crie um veículo para que possamos começar!");
 const carro: Veiculo = criaVeiculo();
