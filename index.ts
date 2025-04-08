@@ -27,6 +27,14 @@ while(true){
         case 2:
             frear(carro);
             break;
+        case 3:
+            subirMarcha(carro);
+            break
+        case 4:
+            reduzMarcha(carro);
+            break;
+        case 5: 
+            console.table(carro)
         default:
             break;
     }
@@ -62,3 +70,22 @@ function frear(veiculo: Veiculo): void {
       console.log("O veículo já está parado");
     }
   }
+
+function reduzMarcha(veiculo: Veiculo): void {
+    if (veiculo.marchaAtual > 0) {
+        veiculo.marchaAtual = veiculo.marchaAtual - 1;
+        console.log(`Marcha reduzida. Marcha atual é: ${veiculo.marchaAtual}`)
+    } else if (veiculo.marchaAtual == 0) {
+        console.log("Não é possível reduzir a marcha. Sua marcha é 0")
+    }
+}
+
+function subirMarcha(veiculo: Veiculo): void {
+    if (veiculo.marchaAtual === veiculo.numeroMarchas) {
+        console.log(`O numero de marchas atual já é o maximo. Marcha atual: ${veiculo.marchaAtual}`);
+    } else {
+        veiculo.marchaAtual += 1;
+        console.log(`Marcha aumentada. Marcha atual: ${veiculo.marchaAtual}`)
+
+    }
+}
