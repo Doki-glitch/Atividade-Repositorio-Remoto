@@ -27,6 +27,10 @@ while(true){
         case 2:
             frear(carro);
             break;
+        case 3:
+            subirMarcha(carro);
+        case 5:
+            console.table(carro);
         default:
             break;
     }
@@ -63,5 +67,18 @@ function frear(veiculo: Veiculo): void {
     }
   }
 
+  function subirMarcha(veiculo: Veiculo): void {
+
+    if (veiculo.marchaAtual === veiculo.numeroMarchas) {
+
+        console.log('Numero de marchas máximo.');
+ 
+    } else{
+         veiculo.marchaAtual += 1;
+         console.log(`Marcha aumentada. Marcha atual: ${veiculo.marchaAtual}`)
+    } 
+
+
+  }
   
 
