@@ -1,6 +1,22 @@
 # Engenharia de Software II
-## Primeira atividade de Git
 
-## Pelo amor de Deus, leiam os slides antes de fazer qualquer coisa!
-## Também vale ressaltar que a última aula (aula 4) o professor explica o que fazer. Tempo: 02:27:43
-## Obs: Lembrem de prestar atenção no nome da branch de vocês. A minha é master, talvez seja interessante chamarem a de vocês de mastar também :D
+## MVP de Veículo em TypeScript 
+
+O seguinte projeto se trata de um MVP em Terminal que simula a operação de véiculo, tendo como ideia suas funções básicas, como acelerar, frear, subir macha, descer macha e etc. 
+
+## Integrantes
+
+- Gabriel Medeiros
+- Johann Ossanes 
+- Vinicius Gaspar
+- Wilkerson Magioli 
+
+## Professor
+
+- Wagner Loch
+
+## Como rodar o projeto 
+
+npm i 
+ts-node index.ts
+
