@@ -26,6 +26,9 @@ while(true){
         case 2:
             frear(carro);
             break;
+        case 4:
+            reduzMarcha(carro);
+            break;
         default:
             break;
     }
@@ -62,5 +65,11 @@ function frear(veiculo: Veiculo): void {
     }
   }
 
-  
-
+function reduzMarcha(veiculo: Veiculo): void {
+    if (veiculo.marchaAtual > 0) {
+        veiculo.marchaAtual = veiculo.marchaAtual - 1;
+        console.log(`Marcha reduzida. Marcha atual é: ${veiculo.marchaAtual}`)
+    } else if (veiculo.marchaAtual == 0) {
+        console.log("Não é possível reduzir a marcha. Sua marcha é 0")
+    }
+}
